@@ -1,0 +1,42 @@
+.Toastify__toast-body {
+  font-family: "Yekan" !important;
+  font-size: 11pt;
+}
+.Toastify__toast-container {
+  width: 320px;
+  bottom: 3em !important;
+}
+.Toastify__toast--default {
+  color: #aaa;
+}
+.Toastify__toast--info {
+  background-color: #3498db;
+}
+.Toastify__toast--success {
+  background-color: #28a745;
+}
+.Toastify__toast--warning {
+  background-color: #ffc107;
+}
+.Toastify__toast--error {
+  background-color: #e03035;
+}
+
+.animate {
+  animation-duration: 800ms;
+}
+
+@media (max-width: 767px) {
+  .Toastify__toast {
+    min-height: 40px;
+    margin-bottom: 0;
+  }
+  .Toastify__toast-body {
+    font-size: 8px;
+  }
+  .Toastify__toast-container {
+    width: 190px;
+    bottom: 2em !important;
+    left: 5px !important;
+  }
+}

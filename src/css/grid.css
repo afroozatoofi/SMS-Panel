@@ -1,0 +1,132 @@
+.table thead th {
+  vertical-align: middle !important;
+  cursor: pointer;
+  background-color: #eaaeb4;
+  font-weight: normal;
+  text-align: center !important;
+  font-weight: normal;
+  font-size: 0.85rem;
+  line-height: 1.55rem;
+}
+.table th,
+.table th input,
+.table tr td {
+  text-align: center !important;
+}
+.table tr td {
+  overflow-wrap: break-word;
+  vertical-align: middle !important;
+}
+.table td .btn-group {
+  word-break: normal;
+}
+.table th.search,
+.table th.search input,
+.table th.search select {
+  padding: 5px;
+}
+.table thead th i {
+  line-height: 25px !important;
+  float: left;
+  vertical-align: middle !important;
+}
+.pagination {
+  display: flex;
+  padding-left: 0 !important;
+  list-style: none;
+  border-radius: 0.25rem;
+  float: left;
+}
+
+.page-link,
+.page-link:hover {
+  color: #e03035;
+}
+.page-item.active .page-link {
+  background-color: #bd2130;
+  border-color: #bd2130;
+}
+tr select {
+  color: #6c757d !important;
+}
+.grid-info {
+  text-align: center;
+  vertical-align: middle !important;
+  height: 320px;
+}
+.lov .grid-info {
+  height: 250px;
+}
+
+.table {
+  min-width: 1024px;
+}
+
+.en {
+  direction: ltr;
+}
+
+@media only screen and (max-width: 767px) {
+  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
+    display: block;
+  }
+  thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  tr {
+    margin: 0 0 1rem 0;
+  }
+  tr.filter {
+    display: none;
+  }
+  .page-item:not(.page-btn) {
+    display: none;
+  }
+  td {
+    border: none;
+    position: relative;
+    padding: 0 32% 0 5px !important;
+    min-height: 35px;
+
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  td:before {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 30%;
+    padding-left: 10px;
+    background-color: #eaaeb4;
+    font-size: 10px;
+
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+    overflow-wrap: break-word;
+    vertical-align: middle !important;
+  }
+  tr .btn-group .btn {
+    padding: 0.1rem 0.2rem;
+    font-size: 0.8rem;
+    line-height: 1.5;
+  }
+  .table {
+    min-width: initial !important;
+  }
+  td:before {
+    content: attr(data-name);
+  }
+}

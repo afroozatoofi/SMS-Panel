@@ -1,0 +1,233 @@
+@font-face {
+  font-family: "Davat";
+  src: url("../fonts/BDavat.eot");
+  src: url("../fonts/BDavat.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/BDavat.woff2") format("woff2"),
+    url("../fonts/BDavat.woff") format("woff"),
+    url("../fonts/BDavat.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Yekan";
+  src: url("../fonts/BYekan.eot");
+  src: url("../fonts/BYekan.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/BYekan.woff2") format("woff2"),
+    url("../fonts/BYekan.woff") format("woff"),
+    url("../fonts/BYekan.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Yekan", Tahoma !important;
+  background: url("../images/background1.png") repeat center center fixed;
+  overflow-y: scroll;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.wrapper {
+  margin-bottom: 0;
+  display: flex !important;
+  align-items: stretch;
+  position: relative;
+}
+.logo {
+  width: 57px;
+  height: 40px;
+  cursor: pointer;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+[role="main"] {
+  padding-bottom: 30px;
+  padding-right: 0;
+  min-height: calc(100vh - 159px);
+}
+
+.copyright {
+  color: white;
+  font-size: 13px;
+}
+
+.form-control#inputUsername {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form-control#inputPassword {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  margin-bottom: 10px;
+}
+
+.row {
+  margin-bottom: 1rem;
+}
+
+.modal {
+  background: rgb(0, 0, 0, 0.3);
+}
+
+#cover-spin {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 1);
+  z-index: 9999;
+  display: none !important;
+}
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#cover-spin::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 48%;
+  top: 40%;
+  width: 40px;
+  height: 40px;
+  border-style: solid;
+  border-color: #bd2130;
+  border-top-color: transparent;
+  border-width: 4px;
+  border-radius: 50%;
+  -webkit-animation: spin 0.8s linear infinite;
+  animation: spin 0.8s linear infinite;
+}
+
+.input-group .datepicker-input {
+  border-radius: 0 0.25rem 0.25rem 0;
+  margin-right: 0 !important;
+}
+.datepicker-input {
+  text-align: center;
+  direction: ltr;
+}
+
+.card-body {
+  padding: 1.25rem 2rem !important;
+}
+
+input[type="radio"] {
+  margin-left: 5px;
+}
+
+.required,
+.validate {
+  color: #bd2130;
+}
+.required:after {
+  content: " *";
+}
+.validate {
+  margin-right: 10px;
+  line-height: 30px;
+}
+.unselectable {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.sort {
+  color: white;
+}
+.input-group-append {
+  height: 38px;
+}
+.input-group-append .input-group-text {
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+  cursor: pointer;
+}
+.hint {
+  font-size: 11px;
+  line-height: 0;
+  color: #8a8a8a;
+}
+.card {
+  margin-top: 1.25rem !important;
+  margin-bottom: 2.3rem !important;
+}
+.input-group {
+  padding: 0;
+}
+.ltr {
+  text-align: left;
+  direction: ltr;
+}
+#header-container {
+  position: relative;
+}
+#header {
+  background-repeat: no-repeat;
+  width: -moz-fit-content;
+  box-shadow: 0 0 3px 1px black;
+  height: 119px;
+  width: 100%;
+  background-size: 100% 100%;
+}
+.card-header {
+  background-image: url("../images/card-header.jpg");
+  background-size: cover;
+  color: #fff;
+}
+.footer {
+  z-index: 10;
+}
+
+.modal-content {
+  top: 100px;
+}
+
+@media (max-width: 768px) {
+  /* #header-container {
+    display: none;
+  } */
+  .card {
+    margin-bottom: 1rem !important;
+  }
+  .copyright {
+    font-size: 10px;
+  }
+}
+@media (max-width: 1536px) {
+  .modal-content {
+    top: 20px;
+  }
+}
+.modal-open {
+  padding-right: 0px !important;
+}
+.btn-w-1 {
+  width: 110px;
+}

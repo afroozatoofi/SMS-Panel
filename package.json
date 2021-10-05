@@ -1,0 +1,52 @@
+{
+  "name": "fuel",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.19.2",
+    "bootstrap": "^4.6.0",
+    "font-awesome": "^4.7.0",
+    "lodash": "^4.17.15",
+    "moment-jalaali": "^0.9.2",
+    "prop-types": "^15.7.2",
+    "react": "^16.13.1",
+    "react-app-polyfill": "^1.0.6",
+    "react-confirm": "^0.1.20",
+    "react-datepicker2": "^3.2.0",
+    "react-dom": "^16.13.1",
+    "react-js-pagination": "^3.0.3",
+    "react-maskedinput": "^4.0.1",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "^3.4.1",
+    "react-toastify": "^5.5.0",
+    "react-tooltip": "^4.2.7",
+    "reactstrap": "^8.4.1",
+    "simple-react-validator": "^1.4.6"
+  },
+  "proxy": "http://localhost:8080",
+  "homepage": "",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "RD /S /Q ..\\src\\main\\webapp && react-scripts build && move build ../src/main/webapp",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version",
+      "last 1 ie version",
+      "ie 9",
+      "ie 11"
+    ]
+  }
+}
